@@ -1,0 +1,11 @@
+pipeline {
+	agent any {
+		stages {
+			stage('Build') {
+				javac GreetingImpl.java
+				java GreetingImpl
+				echo "Testing done"
+			}
+		}
+	}
+}
