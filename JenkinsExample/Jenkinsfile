@@ -2,8 +2,8 @@ pipeline {
 	agent any {
 		stages {
 			stage('Build') {
-				javac GreetingImpl.java
-				java GreetingImpl
+				javac GreetingImplTest.java
+				java GreetingImplTest
 				echo "Testing done"
 			}
 		}
