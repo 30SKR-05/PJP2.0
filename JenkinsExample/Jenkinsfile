@@ -3,6 +3,7 @@ pipeline {
 		stages {
 			stage('Build') {
 				steps {
+					cd JenkinsExample/test/jenkins 
 					javac GreetingImplTest.java
 					java GreetingImplTest
 					echo "Testing done"
